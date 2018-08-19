@@ -32,7 +32,7 @@ const unsigned int stats_interval = 60;  // Update statistics every 60 seconds
 #define CONFIG_MQTT_TOPIC_SET_RESET "reset"
 #define CONFIG_MQTT_TOPIC_SET_UPDATE "update"
 #define CONFIG_MQTT_TOPIC_SET_PING "ping"
-#define CONFIG_MQTT_TOPIC_SET_PONG "ping"
+#define CONFIG_MQTT_TOPIC_SET_PONG "pong"
 #define CONFIG_MQTT_TOPIC_STATUS "/status"
 #define CONFIG_MQTT_TOPIC_STATUS_ONLINE "/online"
 #define CONFIG_MQTT_TOPIC_STATUS_HARDWARE "/hardware"
