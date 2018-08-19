@@ -148,6 +148,7 @@ void sendStatsBoot(void) {
   sprintf(buf, "%d", stats_interval);
   client.publish(((String)mqtt_root + CONFIG_MQTT_TOPIC_STATUS_INTERVAL), buf, true);
   client.publish(((String)mqtt_root + CONFIG_MQTT_TOPIC_STATUS_MAC), WiFi.macAddress(), true);
+  client.publish(((String)mqtt_root + CONFIG_MQTT_TOPIC_GET), CONFIG_MQTT_PAYLOAD_OFF, true);
 }
 
 void sendStatsInterval(void) {
