@@ -1,10 +1,7 @@
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
-#include <ESP8266mDNS.h>
-#include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 #include <PubSubClient.h>
-#include <pgmspace.h>
 
 #define LED 13
 #define RELAY 12
