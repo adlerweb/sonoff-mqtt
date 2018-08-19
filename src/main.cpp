@@ -257,7 +257,9 @@ void callback(char* topic, byte* payload, unsigned int length) {
     Serial.println("MQTT SET!");
     Serial.flush();
     String strMsg = (String)message;
-    cmdSwitch((strMsg.startsWith(CONFIG_MQTT_PAYLOAD_ON)) ? true : false);
+    if((strMsg.startsWith(CONFIG_MQTT_PAYLOAD_ON)) || (strMsg.startsWith(CONFIG_MQTT_PAYLOAD_OFF))) {
+        cmdSwitch((strMsg.startsWith(CONFIG_MQTT_PAYLOAD_ON)) ? true : false);
+    }
   }
 
   if(topicStr.startsWith((String)check + "/" + CONFIG_MQTT_TOPIC_SET_RESET)) {
